@@ -1,7 +1,7 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 import {
-	vitePreproces
-} from '@sveltejs/kit/vite';
+	vitePreprocess
+} from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -12,8 +12,8 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter(),
 		paths: {
-			base: process.env.NODE_ENV===
-production' ? '/nasim-ma' : '',
+			base: process.env.NODE_ENV === 'production' ? '/nasim-ma' : '',
+		}
 	}
 };
 
