@@ -1,5 +1,6 @@
 <script>
   import { page } from '$app/stores';
+  import { base } from '$app/paths'; 
 </script>
 
 <h1>Welcome to My Website</h1>
@@ -7,7 +8,7 @@
 
 <nav>
   <ul>
-    <li><a href="/about">About</a></li>
-    <li><a href="/contact">Contact</a></li>
+    <li><a href="{base}/about">About</a></li>
+    <li><a href="{base}/contact">Contact</a></li>
   </ul>
 </nav>
